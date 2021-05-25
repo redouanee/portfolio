@@ -1,0 +1,34 @@
+@import url(https://fr.allfont.net/allfont.css?fonts=abril-fatface)
+
+* {
+    font-family: 'Abril fat;
+}
+
+body {
+    margin: 0 auto;
+}
+
+section.top-page {
+    background: url("../image/fond_site.png");
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 0px;
+}
+
+nav.nav li {
+    color: white;
+}
+
+.big-tittle {
+color: rgb(31, 31, 54);
+font-size: 80px;
+padding: 20px 420px ;
+}
+
