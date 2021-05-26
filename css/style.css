@@ -1,7 +1,6 @@
-@import url(https://fr.allfont.net/allfont.css?fonts=abril-fatface)
 
-* {
-    font-family: 'Abril fat;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,18 +16,209 @@ section.top-page {
 
 nav.nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
     margin-left: 0px;
 }
 
-nav.nav li {
+nav.nav li a{
     color: white;
+    text-decoration: none;
+}
+
+.landing-page {
+    padding: 20px 420px ;
 }
 
 .big-tittle {
 color: rgb(31, 31, 54);
 font-size: 80px;
-padding: 20px 420px ;
+font-family: Arial, Helvetica, sans-serif;
 }
+
+.scroll-down {
+    color: rgb(13, 13, 59);
+    text-decoration: none;
+    position: absolute;
+    bottom: 150px;
+}
+
+/* cv */
+
+.cv {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.cv-it {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* experience */
+
+.section-title {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color:rgb(13, 13, 59);
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.experience {
+    margin: 100px;
+}
+
+.exp {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.exp-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 330px;
+    flex: 1;
+}
+
+.exp1 {
+    background-image: url(../image/bourget.jpg);
+}
+
+.exp2 {
+    background-image: url(../image/sav.jpeg);
+}
+
+.exp3 {
+    background-image: url(../image/log.jpg);
+}
+
+.exp-details {
+    background-color: #FFFFFFDF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.exp-name {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* mes competence */
+
+.competence {
+    margin: 100px;
+}
+
+.competence-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+}
+
+.competence-grid1 {
+    background-image: url(../image/gestion.jpg);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.competence-grid2 {
+    background-image: url(../image/language.jpg);
+    grid-column: 3/5;
+}
+
+.competence-grid3 {
+    background-image: url(../image/html.jpg);
+    grid-column: 3/5;
+}
+
+.competence-grid4 {
+    background-image: url(../image/css.jpg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.competence-grid5 {
+    background-image: url(../image/groupe.jpg);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.competence-grid6 {
+    background-image: url(../image/github.png);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* mes projets */
+
+.projet {
+    margin: 100px;
+}
+.projet-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+}
+
+.projet-grid1 {
+    background-image: url(../image/rpg.png);
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.projet-grid2 {
+    background-image: url(../image/lab.png);
+    grid-column: 3/5;
+}
+
+.projet-grid3 {
+    background-image: url(../image/appli.jpg);
+    grid-column: 3/5;
+}
+
+.projet-grid4 {
+    background-image: url(../image/site.jpeg);
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.projet-grid5 {
+    background-image: url(../image/hack.png);
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+
+.projet-grid6 {
+    background-image: url(../image/images.jpeg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+
 
